@@ -52,7 +52,7 @@
       margin: -60px 0 0 0;
       padding: 0;
       position: relative;
-      left: -2%;
+      left: 0%;
       top: -5px;
     }
     @media (max-width: 800px){
@@ -76,15 +76,15 @@
 
   .top1 {
   height: 90vh;
-  width: 100%;
+  width: 90%;
   object-fit: cover;
-  filter: brightness(0.8);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 100px;
+  justify-content: flex-end;
+  filter: brightness(1.1);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   position: relative;
-  left: -40px;
   bottom: -32px;
   transition: all 0.6s ease-in-out; /* ← トランジション追加 */
 }
@@ -93,7 +93,7 @@
   .top1 {
     height: 86vh;
     width: 100%;
-    filter: brightness(0.8);
+    filter: brightness(1.1);
     object-fit: cover;
     justify-content: center;
     border-radius: 30px;
@@ -106,11 +106,12 @@
 
 .top1 img {
       position: absolute;
+      right: -170px;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-top-left-radius: 0px;
-  border-top-right-radius: 100px;
+      border-top-left-radius: 100px;
+  border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
       opacity: 0;
@@ -727,9 +728,39 @@
   top: 30px;
   }
 }
-
-
-
+.top-title {
+  flex-direction: column;
+  font-size: 40px;
+  font-family: "Montserrat", "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  width: 800px;
+  position: relative;
+  z-index: 1;
+  top: -250px;
+  right: -50px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; /* 縦並び */
+  gap: 10px;
+}
+.top-title1{
+  background-color: #fff;
+  padding: 10px 15px;
+  display: inline-block;
+}
+.top-title2{
+  background-color: #fff;
+  padding: 10px 15px;
+  display: inline-block;
+}
+.top-title3{
+  font-size: 18px;
+  letter-spacing: 1px;
+  background-color: #fff;
+  padding: 10px 15px;
+  display: inline-block;
+}
     </style>
   </head>
   <body>
@@ -747,6 +778,10 @@
     <img src="https://i.ibb.co/m5VX6KhS/2025-09-17-0-30-20.png">
     <img src="https://i.ibb.co/b5b7Rjm1/2025-09-16-23-53-58.png">
   </div>
+  </div>
+  <div class="top-title">
+    <div class="top-title2">"俺は金以外失うもんはねぇ"</div>
+    <div class="top-title3">"I have nothing to lose except money" - GaKU</div>
   </div>
   <div class="about">
   <!-- テキスト全体をラップ -->
