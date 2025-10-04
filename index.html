@@ -517,6 +517,25 @@
       }
     }
 
+   .keyword {
+      font-family: "Montserrat", "Noto Sans JP", sans-serif;    
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+      top: 300px;
+    }
+    @media (max-width: 800px){
+      .keyword{
+      font-family: "Montserrat", "Noto Sans JP", sans-serif;
+        max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      position: relative;
+      top: 350px;
+      }
+    }
     .contact-title{
       font-size: 38px;
       text-align: center;
@@ -533,6 +552,62 @@
       top: -24px;
     }
   }
+
+  .key-title{
+    font-family: "Montserrat", "Noto Sans JP", sans-serif;
+      font-size: 38px;
+      text-align: center;
+      font-weight: 600;
+      position: relative;
+      top: -30px;
+    }
+@media (max-width: 800px){
+    .key-title{
+      font-family: "Montserrat", "Noto Sans JP", sans-serif;
+      font-size: 34px;
+      text-align: center;
+      font-weight: 600;
+      position: relative;
+      top: -24px;
+    }
+  }
+
+    .key-title-sub{
+      font-family: "Montserrat", "Noto Sans JP", sans-serif;
+      font-size: 18px;
+      text-align: center;
+      font-family: ;
+      font-weight: 500;
+      position: relative;
+      top: -30px;
+
+    }
+@media (max-width: 800px){
+    .key-title-sub{
+      font-family: "Montserrat", "Noto Sans JP", sans-serif;
+      font-size: 16px;
+      text-align: center;
+      font-weight: 500;
+      position: relative;
+      top: -24px;
+    }
+  }
+  .key-title-sub::after{
+      font-size: 18px;
+      text-align: center;
+      font-weight: 500;
+      position: relative;
+      top: 10px;
+      font-family: "Montserrat", "Noto Sans JP", sans-serif;
+      content: "";
+  display: block;
+  width: 50px;   /* ← 線の長さを調整 */
+  height: 3px;    /* ← 線の太さ */
+  background-color: #000; /* ← 線の色 */
+  margin: 8px auto 0; /* 上に余白、autoで中央寄せ */
+  border-radius: 2px;   /* ← 角を丸めて柔らかい印象 */
+    }
+
   .contact-title-sub{
       font-size: 18px;
       text-align: center;
@@ -907,7 +982,10 @@
     <img src="https://i.ibb.co/CKXhZkgp/IMG-1675.jpg" alt="about-img">
   </div>
 </div>
-<div class="code-title">キーワード一覧</div>
+<section class="keyword">
+<div class="key-title">KEYWORD</div>
+<div class="key-title-sub">キーワード一覧</div>
+</section>
 <div class="code">
 <main class="wrapper grid">
 <div class="oshie01">
@@ -1077,6 +1155,39 @@
       <div class="desc">Gakuのにこ(?)写真</div>
     </div>
   </div>
+
+  <div class="oshie01">
+    <div class="number">22</div>
+    <div class="text">
+      <div class="title">寝顔</div>
+      <div class="desc">ファミレスで寝てるがくくん</div>
+    </div>
+  </div>
+
+  <div class="oshie01">
+    <div class="number">23</div>
+    <div class="text">
+      <div class="title">ピアノ</div>
+      <div class="desc">イキってストリートピアノを弾くがくくん</div>
+    </div>
+  </div>
+
+  <div class="oshie01">
+    <div class="number">24</div>
+    <div class="text">
+      <div class="title">加工</div>
+      <div class="desc">がくくんの加工写真（飛行機）</div>
+    </div>
+  </div>
+
+  <div class="oshie01">
+    <div class="number">25</div>
+    <div class="text">
+      <div class="title">囚人</div>
+      <div class="desc">がくくんが檻（校門）に閉じ込められてる写真</div>
+    </div>
+  </div>
+
 </main>
 </div>
 <div class="news">
